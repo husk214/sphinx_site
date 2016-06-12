@@ -9,8 +9,14 @@
 .. role:: pubs
   :class: pubs
 
+.. raw:: html
+
+  <figure class="top_float">
+    <img src="_static/icon.jpg" class="img-thumbnail">
+  </figure>
+
 Atsushi Shibagaki (柴垣篤志)
-=============================================
+==========================================
 
 I am currently a master's student
 (department of scientific and engineering simulation)
