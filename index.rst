@@ -44,8 +44,8 @@ Publications
 
       *A. Shibagaki*, M. Karasuyama, K. Hatano and I. Takeuchi
 
-      Proceedings of The 33rd International Conference on Machine Learning (`ICML2016 <http://icml.cc/2016/>`_), pp. 1577–1586, New York City, USA, June 2016
-      **(acceptance rate = 322/1327 = 24.3)%**
+      Proceedings of The 33rd International Conference on Machine Learning (`ICML2016 <http://icml.cc/2016/>`_), pp. 1577–1586, New York, NY, USA, June 2016
+      **(acceptance rate = 322/1327 = 24.3%)**
 
       .. rst-class:: mybtn2
 
@@ -92,6 +92,19 @@ Publications
 
         `paper <http://www.ieice.org/ken/paper/20150306DBZ8/>`_
 
+
+Preprint
+^^^^^^^^^^
+
+.. rst-class:: paperli
+
+    - **Efficiently Bounding Optimal Solutions after Small Data Modification in Large-Scale Empirical Risk Minimization**
+
+      *H. Hanada*, *A. Shibagaki*, J. Sakuma, and I. Takeuchi
+
+      .. rst-class:: mybtn2
+
+        `ArXiv:1606.00136 <http://arxiv.org/abs/1606.00136>`_
 
 Activities
 ^^^^^^^^^^^^
