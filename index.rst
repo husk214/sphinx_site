@@ -82,6 +82,18 @@ Publications
 
 .. rst-class:: paperli
 
+    - **スパースモデルのための特徴と標本の同時セーフスクリーニング**
+
+      *柴垣篤志*, 烏山昌幸, 畑埜晃平, 竹内一郎
+
+      信学技報, vol. 116, no. 121, `IBISML <http://ibisml.org/ibisml025>`_ 2016-4, pp. 201-208, 沖縄, 2016年7月.
+
+      .. rst-class:: mybtn2
+
+        `paper <http://www.ieice.org/ken/paper/20160706YbjI/>`_
+
+.. rst-class:: paperli
+
     - :math:`L_2^2` **正則化凸損失関数最小化問題のための検証誤差近似保証付きモデル選択**
 
       *柴垣篤志*, 鈴木良規, 竹内一郎
