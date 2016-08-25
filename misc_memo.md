@@ -28,6 +28,20 @@
   - .lha .lzh       : `lha c fn.lzh target`
   - .zip            : `zip fn.zip target`
 
+### dmidecode
+
+ハードウエア情報取得
+
+### disown
+
+nohupし忘れ
+```
+# Ctrl+Zで中断
+bg 1
+jobs 1
+disown %1
+```
+
 ### top
 
 #### option
