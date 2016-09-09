@@ -70,10 +70,17 @@ Publications
 .. raw:: html
 
     <div class="papercard">
+        <strong>経験損失最小化問題における高速感度分析に関する一提案</strong> <br>
+        <u>花田博幸, <i>柴垣篤志</i>, 佐久間淳, 竹内一郎</u> <br>
+        信学技報, vol. 116, no. 209, <a href="http://ibisml.org/ibisml026">IBISML</a> 2016-35, pp. 203-210, 富山, 2016年9月. <br>
+        <div class="mybtn3"><a href="http://www.ieice.org/ken/paper/20160906Xbkj/">paper</a></div>
+    </div>
+
+    <div class="papercard">
         <strong>スパースモデルのための特徴と標本の同時セーフスクリーニング</strong> <br>
         <u><i>柴垣篤志</i>, 烏山昌幸, 畑埜晃平, 竹内一郎</u> <br>
         信学技報, vol. 116, no. 121, <a href="http://ibisml.org/ibisml025">IBISML</a> 2016-4, pp. 201-208, 沖縄, 2016年7月. <br>
-        <div class="mybtn3"><a href="http://www.ieice.org/ken/paper/20160706YbjI">paper</a></div>
+        <div class="mybtn3"><a href="http://www.ieice.org/ken/paper/20160706YbjI/">paper</a></div>
     </div>
 
     <div class="papercard">
