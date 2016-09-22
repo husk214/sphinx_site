@@ -11,6 +11,9 @@
 
 - `zmv -W 'hoge-*.*.*.tar.gz' 'hoge-*--*--*.tar.gz'`
 
+### 0埋め連番rename
+
+- `(n=1; zmv '*.jpg' '${(l:3::0:)$((n++))}.jpg')`
 
 ### 解凍コマンド
   - .tar.gz .tgz    : `tar -xzvf fn`
