@@ -5,11 +5,7 @@ Notation
 ----------
 .. raw:: html
 
-  <ul>
-    <li>
-      $r \in \mathbb{R}^n$ : (アルゴリズムの予測値によってソートした)関連度のリスト
-    </li>
-  </ul>
+- :math:`r \in \mathbb{R}^n` : (アルゴリズムの予測値によってソートした)関連度のリスト
 
 
 nDCG@k
