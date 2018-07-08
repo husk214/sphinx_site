@@ -164,7 +164,7 @@ Activities
 
 
 
-Memo
+Note
 ^^^^^
 
 .. toctree::
