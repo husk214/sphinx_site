@@ -168,11 +168,11 @@ Memo
 ^^^^^
 
 .. toctree::
-   :maxdepth: 1
+  :maxdepth: 2
 
-   misc_memo
-   git_memo
-   tex_memo
+  recsys
+  misc_memo
+  tex_memo
 
 .. Memo
 .. -------

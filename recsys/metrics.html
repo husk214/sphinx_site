@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Metrics &mdash; Atsushi Shibagaki 170323 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/octicons/octicons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.3.6/simplex/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '170323',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="top" title="Atsushi Shibagaki 170323 documentation" href="../index.html" />
+<link rel="stylesheet" href="_static/custom.css" type="text/css" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74773673-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } },
+  tex2jax: { inlineMath: [['$','$']] }
+});
+</script>
+
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Atsushi Shibagaki</a>
+        <span class="navbar-text navbar-version pull-left"><b>170323</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../stochastic_optimization/stochastic_optimization.html">Stochastic Optimization for Regularized Empirical Risk Minization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../stochastic_optimization/stochastic_optimization.html#notation">Notation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../stochastic_optimization/stochastic_optimization.html#convergence-rate">Convergence Rate</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../misc_memo.html">Misc</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc_memo.html#other">other</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc_memo.html#sublime-text">sublime text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc_memo.html#emacs">emacs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tex_memo.html">TeX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tex_memo.html#algorithm2e">algorithm2e</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tex_memo.html#document-platex-template">document (platex) template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tex_memo.html#document-lualatex-template">document (lualatex) template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tex_memo.html#beamer-template">beamer template</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Metrics</a><ul>
+<li><a class="reference internal" href="#ndcg">NDCG</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div id="preamble" style="display:none">$
+\newcommand\veps{\varepsilon}
+\newcommand\eq[1]{(\ref{#1})}
+\newcommand\lA{\leftarrow}
+\newcommand\rA{\rightarrow}
+\newcommand\LA{\Leftarrow}
+\newcommand\RA{\Rightarrow}
+\newcommand\LrA{\Leftrightarrow}
+\newcommand\LRA{\Leftrightarrow}
+\newcommand\inner[2]{\left\langle #1,#2 \right\rangle}
+\newcommand\HH{\mathbb{H}}
+\newcommand\MM{\mathbb{M}}
+\newcommand\RR{\mathbb{R}}
+\newcommand\NN{\mathbb{N}}
+\newcommand\ZZ{\mathbb{Z}}
+\newcommand\EE{\mathbb{E}}
+\newcommand\VV{{\rm Var}}
+\newcommand\II{\bm{{\rm I}}}
+\newcommand\PP{\mathbb{P}}
+\newcommand\bA{\mathbb{A}}
+\newcommand\bB{\mathbb{B}}
+\newcommand\bC{\mathbb{C}}
+\newcommand\bD{\mathbb{D}}
+\newcommand\bE{\mathbb{E}}
+\newcommand\bF{\mathbb{F}}
+\newcommand\bG{\mathbb{G}}
+\newcommand\bH{\mathbb{H}}
+\newcommand\bI{\mathbb{I}}
+\newcommand\bJ{\mathbb{J}}
+\newcommand\bK{\mathbb{K}}
+\newcommand\bL{\mathbb{L}}
+\newcommand\bM{\mathbb{M}}
+\newcommand\bN{\mathbb{N}}
+\newcommand\bO{\mathbb{O}}
+\newcommand\bP{\mathbb{P}}
+\newcommand\bQ{\mathbb{Q}}
+\newcommand\bR{\mathbb{R}}
+\newcommand\bS{\mathbb{S}}
+\newcommand\bT{\mathbb{T}}
+\newcommand\bU{\mathbb{U}}
+\newcommand\bV{\mathbb{V}}
+\newcommand\bW{\mathbb{W}}
+\newcommand\bX{\mathbb{X}}
+\newcommand\bY{\mathbb{Y}}
+\newcommand\bZ{\mathbb{Z}}
+\newcommand\cA{{\mathcal A}}
+\newcommand\cB{{\mathcal B}}
+\newcommand\cC{{\mathcal C}}
+\newcommand\cD{{\mathcal D}}
+\newcommand\cE{{\mathcal E}}
+\newcommand\cF{{\mathcal F}}
+\newcommand\cG{{\mathcal G}}
+\newcommand\cH{{\mathcal H}}
+\newcommand\cI{{\mathcal I}}
+\newcommand\cJ{{\mathcal J}}
+\newcommand\cK{{\mathcal K}}
+\newcommand\cL{{\mathcal L}}
+\newcommand\cM{{\mathcal M}}
+\newcommand\cN{{\mathcal N}}
+\newcommand\cO{{\mathcal O}}
+\newcommand\cP{{\mathcal P}}
+\newcommand\cQ{{\mathcal Q}}
+\newcommand\cR{{\mathcal R}}
+\newcommand\cS{{\mathcal S}}
+\newcommand\cT{{\mathcal T}}
+\newcommand\cU{{\mathcal U}}
+\newcommand\cV{{\mathcal V}}
+\newcommand\cW{{\mathcal W}}
+\newcommand\ccX{{\mathcal X}}
+\newcommand\cY{{\mathcal Y}}
+\newcommand\cZ{{\mathcal Z}}
+\newcommand\ones{\mathbb{1}}
+\newcommand\onet{\mathbb{1}^\top}
+\newcommand\rbra[1]{\left( {#1} \right)}
+\newcommand\cbra[1]{\left\{ {#1} \right\}}
+\newcommand\sbra[1]{\left[ {#1} \right]}
+\newcommand\st{~{\rm s.t.}~}
+\newcommand\dom{{\rm dom}~}
+\newcommand\ri[1]{{\rm ri}\rbra{ {#1} }}
+\newcommand\cl[1]{{\rm cl}\rbra{ {#1} }}
+\newcommand\Image[1]{{\rm Image}\rbra{ {#1} }}
+\newcommand\prox[1]{{\rm prox}_{#1}}
+\newcommand\pnorm[2]{\left\| {#1} \right\|_{#2}}
+\newcommand\norm[1]{\left\| {#1} \right\|}
+\newcommand\sqnorm[1]{\left\| {#1} \right\|_2^2}
+\newcommand\sqn[1]{\left\| {#1} \right\|_2^2}
+\newcommand\ev[1]{\EE \sbra{#1} }
+\newcommand\XI{X_{i:}}
+\newcommand\XJ{X_{:j}}
+\newcommand\XMJ{X_{:M_j}}
+\newcommand\fdb{{\lfloor d/b \rfloor}}
+\newcommand\al{\alpha}
+\newcommand\alsi{\alpha^*_i}
+\newcommand\alti{\alpha^t_i}
+\newcommand\altoi{\alpha^{t+1}_i}
+\newcommand\altk{\alpha^t_k}
+\newcommand\altok{\alpha^{t+1}_k}
+\newcommand\als{\alpha^*}
+\newcommand\alt{\alpha^t}
+\newcommand\alto{\alpha^{t+1}}
+\newcommand\alot{\alpha^{t-1}}
+\newcommand\balt{\bar{\alpha}^{t}}
+\newcommand\balto{\bar{\alpha}^{t+1}}
+\newcommand\tlalt{\tl{\alpha}^{t}}
+\newcommand\tlalto{\tl{\alpha}^{t+1}}
+\newcommand\wsj{w^*_j}
+\newcommand\wtj{w^t_j}
+\newcommand\wtoj{w^{t+1}_j}
+\newcommand\wtm{w^t_m}
+\newcommand\wtom{w^{t+1}_m}
+\newcommand\wsmj{w^*_{M_j}}
+\newcommand\wtmj{w^t_{M_j}}
+\newcommand\wtomj{w^{t+1}_{M_j}}
+\newcommand\wsmh{w^*_{M_h}}
+\newcommand\wtmh{w^t_{M_h}}
+\newcommand\wtomh{w^{t+1}_{M_h}}
+\newcommand\wsml{w^*_{M_l}}
+\newcommand\wtml{w^t_{M_l}}
+\newcommand\wtoml{w^{t+1}_{M_l}}
+\newcommand\ws{w^*}
+\newcommand\wt{w^t}
+\newcommand\wto{w^{t+1}}
+\newcommand\wot{w^{t-1}}
+\newcommand\bwt{\bar{w}^t}
+\newcommand\bwto{\bar{w}^{t+1}}
+\newcommand\bwot{\bar{w}^{t-1}}
+\newcommand\tlwt{\tl{w}^t}
+\newcommand\tlwto{\tl{w}^{t+1}}
+\newcommand\tlwot{\tl{w}^{t-1}}
+\newcommand\tl[1]{\tilde{#1}}
+\newcommand\oon{\frac{1}{n}}
+\newcommand\sumi{\sum_{i \in [n]} }
+\newcommand\sumj{\sum_{j \in [d]} }
+\newcommand\sumk{\sum_{k \in K} }
+\newcommand\summ{\sum_{m \in M} }
+\newcommand\sumxi{\sum_{i \in [n]} x_i }
+\newcommand\sumxinorm{\sum_{i \in [n]} \pnorm{x_i}{2} }
+\newcommand\sumxisq{\sum_{i \in [n]} \sqnorm{x_i} }
+\newcommand\dotp[2]{\left\langle #1 , #2 \right\rangle}
+\newcommand\inp[2]{\left\langle #1 , #2 \right\rangle}
+\newcommand\winp[3]{{\left\langle #1 , #2 \right\rangle}_{#3}}
+\newcommand\inv[1]{ \rbra{#1}^{-1} }
+\newcommand\tr[1]{{\rm tr}\left({#1}\right)}
+\newcommand\ve[1]{{\rm vec}\left({#1}\right)}
+\newcommand\trnorm[1]{\left\|{#1}\right\|_*}
+\newcommand\frnorm[1]{\left\|{#1}\right\|_{\rm F}}
+\newcommand\spnorm[1]{\left\|{#1}\right\|_2}
+\newcommand\argmax{\mathop{\rm argmax}\limits}
+\newcommand\argmin{\mathop{\rm argmin}\limits}
+$</div>
+<div class="section" id="metrics">
+<h1>Metrics<a class="headerlink" href="#metrics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ndcg">
+<h2>NDCG<a class="headerlink" href="#ndcg" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>Suppose that the assumptions of
+Lemma hold.</div></blockquote>
+  $\bra{a}$
+  Suppose that the assumptions of
+  Lemma hold and $a \le \sqrt{n}$.
+  For any proper distribution $p$ with $p_i \in (0, 1/(a\sqrt{n})], \forall i \in [n]$,
+  if we set the parameters $\tau$ and $\sigma_i$ as
+  $\tau = \frac{a\underline{R}}{2} \sqrt{\frac{n\gamma}{\lambda}},$
+  $\sigma_i = \frac{np_i}{2\|x_i\|_2} \sqrt{\frac{n\lambda}{\gamma}}$,
+  where
+  $\underline{R} := \min_{i \in [n] } \frac{p_i }{\|x_i\|_2}$,
+  then Algorithm guarantees $ \EE [\| w^T - w^*\|_2^2 ] < \veps$ for
+  $
+    T \ge \max_{i \in [n]} \rbra{\frac{1}{ap_i} +
+    \frac{\|x_i\|_2}{p_i a \sqrt{n\gamma \lambda} } }
+    \log \rbra{\frac{\Delta_0/((2\tau)^{-1} + \lambda)}{\veps}}$
+  iterations.
+
+\begin{align}
+  \label{eq:1}
+  aaa \le \sqrt{n} \rbra{aaa}
+\end{align}
+
+\ref{eq:1} is owesome.</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016-present, Atsushi Shibagaki.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
